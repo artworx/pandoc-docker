@@ -18,3 +18,5 @@ ENV PANDOC_VERSION "1.19.2.1"
 
 # install pandoc
 RUN cabal update && cabal install pandoc-${PANDOC_VERSION} pandoc-include
+
+WORKDIR /source
